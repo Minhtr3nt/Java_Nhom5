@@ -19,8 +19,8 @@ public class ThietBiHoTro extends ThietBi{
     
     
 
-    public ThietBiHoTro(int TinhTrangHoatDong, int DiemTuoiTho, int DiemTieuHao, int DiemHieuSuat, int DiemHuHong, int DiemBaoTri, String MaTb, String TenTb, int SoLuong, int NamSX , String LoaiThietBi, String GhiChu) {
-        super(MaTb, TenTb, SoLuong, NamSX,LoaiThietBi, GhiChu);
+    public ThietBiHoTro(int TinhTrangHoatDong, int DiemTuoiTho, int DiemTieuHao, int DiemHieuSuat, int DiemHuHong, int DiemBaoTri, String MaTb,String TenDN, String MatKhau, String TenTb, int SoLuong, int NamSX , String LoaiThietBi, String GhiChu) {
+        super(MaTb, TenDN, MatKhau, TenTb, SoLuong, NamSX,LoaiThietBi, GhiChu);
         this.TinhTrangHoatDong = TinhTrangHoatDong;
         this.DiemTuoiTho = DiemTuoiTho;
         this.DiemTieuHao = DiemTieuHao;
@@ -28,6 +28,13 @@ public class ThietBiHoTro extends ThietBi{
         this.DiemHuHong = DiemHuHong;
         this.DiemBaoTri = DiemBaoTri;
     }
+
+    public ThietBiHoTro() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    
+    
 
     public int getTinhTrangHoatDong() {
         return TinhTrangHoatDong;

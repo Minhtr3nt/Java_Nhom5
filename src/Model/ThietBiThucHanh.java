@@ -21,8 +21,8 @@ public class ThietBiThucHanh extends ThietBi{
     
     
      
-    public ThietBiThucHanh(int TinhTrangHoatDong, int DiemTuoiTho, int DiemTieuHao, int DiemHieuSuat, int DiemHuHong, int DiemBaoTri, String MaTb, String TenTb, int SoLuong, int NamSX,String LoaiThietBi, String GhiChu) {
-        super(MaTb, TenTb, SoLuong, NamSX,LoaiThietBi, GhiChu);
+    public ThietBiThucHanh(int TinhTrangHoatDong, int DiemTuoiTho, int DiemTieuHao, int DiemHieuSuat, int DiemHuHong, int DiemBaoTri, String MaTb,String TenDN,String MatKhau, String TenTb, int SoLuong, int NamSX,String LoaiThietBi, String GhiChu) {
+        super(MaTb,TenDN, MatKhau, TenTb, SoLuong, NamSX,LoaiThietBi, GhiChu);
         this.TinhTrangHoatDong = TinhTrangHoatDong;
         this.DiemTuoiTho = DiemTuoiTho;
         this.DiemTieuHao = DiemTieuHao;
@@ -30,6 +30,10 @@ public class ThietBiThucHanh extends ThietBi{
         this.DiemHuHong = DiemHuHong;
         this.DiemBaoTri = DiemBaoTri;
     }
+
+    public ThietBiThucHanh() {
+    }
+    
 
     public int getTinhTrangHoatDong() {
         return TinhTrangHoatDong;
