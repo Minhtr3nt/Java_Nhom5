@@ -3,12 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/MenuAdmin.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/Model/ThietBi.java</file>
             <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/DanhGiaAdmin.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/Model/TaiKhoan.java</file>
             <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/DangNhap.java</file>
-            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/DangKy.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/DanhGiaUser.java</file>
             <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/QuanLyThietBi.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/DanhGiaThietBiThucHanh.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/FileController/IFileData.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/DanhGiaThietBiHoTroUser.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/MenuAdmin.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/XemTinhTrangAdmin.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/DanhGiaThietBiThucHanhUser.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/FileController/FileData.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/DanhGiaThietBiHoTro.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/DangKy.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/Model/ThietBiHoTro.java</file>
             <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/MenuUser.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/XemTinhTrangUser.java</file>
+            <file>file:/C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/view/XemThongTinThietBi.java</file>
         </group>
     </open-files>
 </project-private>

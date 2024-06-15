@@ -141,6 +141,12 @@ public abstract class ThietBi implements Serializable {
         return "ThietBi{" + "MaTb=" + MaTb + ", tk=" + tk + ", TenTb=" + TenTb + ", SoLuong=" + SoLuong + ", NamSX=" + NamSX + ", LoaiThietBi=" + LoaiThietBi + ", GhiChu=" + GhiChu + '}';
     }
 
+    public String getDanhGia() {
+       return "";
+    }
+
+    
+
     
     
     

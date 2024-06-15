@@ -1,0 +1,10 @@
+¬í sr java.util.ArrayListxÒ™Ça I sizexp   w   sr Model.ThietBiHoTrolœ„Ø´¡ I 
+DiemBaoTriI DiemHieuSuatI 
+DiemHuHongI DiemTieuHaoI DiemTuoiThoI TinhTrangHoatDongxr 
+Model.ThietBië”C’’ªŠ I NamSXI SoLuongL GhiChut Ljava/lang/String;L LoaiThietBiq ~ L MaTbq ~ L TenTbq ~ L tkt LModel/TaiKhoan;xp  æ   t khongt 
+Há»— trá»£t tb04t fsfsr Model.TaiKhoan\¯Hê L MatKhauq ~ L TenDNq ~ xpt 1234t nam                        sr Model.ThietBiThucHanhÃb„Zßr, I 
+DiemBaoTriI DiemHieuSuatI 
+DiemHuHongI DiemTieuHaoI DiemTuoiThoI TinhTrangHoatDongxq ~   å   t fdscdst Thá»±c hÃ nht tb05t gdffvsq ~ t 123t fdsffdsa                        sq ~   ä   t khÃ´ngt Thá»±c hÃ nht tb01t 
+MÃ¡y tÃ­nhsq ~ t 123t minh                        sq ~   ä   t khÃ´ngt 
+Há»— trá»£t tb02t MÃ¡y insq ~ t 1234t thanh                        sq ~   æ   t khÃ´ngq ~ t tb03t csdvssq ~ t 123t vsfds                        sq ~   ä   t khÃ´ngt 
+Há»— trá»£t tb6t fdsfsq ~ t 123t duc                        sq ~   å   t cst Thá»±c hÃ nht tb7t gdffvsq ~ t 123t duy                        x

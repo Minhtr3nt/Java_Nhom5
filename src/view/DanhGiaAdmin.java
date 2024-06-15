@@ -19,7 +19,7 @@ public class DanhGiaAdmin extends javax.swing.JFrame {
      * Creates new form DanhGia
      */
      FileData<ThietBi> iofile = new FileData<>();
-        String filename = "C:/Users/abccc/Documents/NetBeansProjects/QuanLyThietBiPhongThucHanh_Nhom5/src/Data.txt";
+        String filename = "Data.txt";
          List<ThietBi> DSTB = new ArrayList<>(iofile.readObjectFromFile(filename));
     public DanhGiaAdmin() {
         
@@ -57,6 +57,8 @@ public class DanhGiaAdmin extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 51, 255));
         jLabel2.setText("MENU ĐÁNH GIÁ");
 
         jButton2.setText("Thoát");
@@ -80,8 +82,8 @@ public class DanhGiaAdmin extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(158, 158, 158)
-                        .addComponent(jLabel2))
+                        .addGap(169, 169, 169)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(122, 122, 122)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -89,18 +91,18 @@ public class DanhGiaAdmin extends javax.swing.JFrame {
                                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(26, 26, 26)
                                 .addComponent(jButton1))
-                            .addComponent(jLabel1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(169, 169, 169)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel1)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(jLabel2)))))
                 .addContainerGap(145, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
+                .addGap(46, 46, 46)
                 .addComponent(jLabel2)
-                .addGap(35, 35, 35)
+                .addGap(34, 34, 34)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -108,7 +110,7 @@ public class DanhGiaAdmin extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         pack();
@@ -117,13 +119,24 @@ public class DanhGiaAdmin extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
             for(ThietBi TB : DSTB){
                 if(TB.getMaTb().equals(jComboBox1.getSelectedItem().toString())){
-                    //if(TB.getLoaiThietBi().equals("Hỗ Trợ"))
+                    String MaThietBi = TB.getMaTb();
+                    if(TB.getLoaiThietBi().equals("Hỗ trợ")){
+                        DanhGiaThietBiHoTro secondForm = new DanhGiaThietBiHoTro(MaThietBi);
+                        secondForm.setVisible(true);
+                        this.dispose();
+                    }else{
+                        DanhGiaThietBiThucHanh secondForm = new DanhGiaThietBiThucHanh(MaThietBi);
+                        secondForm.setVisible(true);
+                        this.dispose();
+                    }
                 }
             }
     }//GEN-LAST:event_jButton1ActionPerformed
         // Xử lý sự kiện khi nhấn nút thoát
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-                // TODO add your handling code here:
+                MenuAdmin secondForm = new MenuAdmin();
+                secondForm.setVisible(true);
+                this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed

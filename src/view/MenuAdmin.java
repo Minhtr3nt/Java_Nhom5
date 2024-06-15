@@ -31,9 +31,11 @@ public class MenuAdmin extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Admin Menu");
 
         jButton1.setText("Quản lý thiết bị");
@@ -51,6 +53,18 @@ public class MenuAdmin extends javax.swing.JFrame {
         });
 
         jButton3.setText("Đánh giá tình trạng");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        jButton4.setText("Đăng Xuất");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -67,13 +81,15 @@ public class MenuAdmin extends javax.swing.JFrame {
                                 .addComponent(jButton2))
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(131, 131, 131)
-                        .addComponent(jButton3)))
+                        .addGap(127, 127, 127)
+                        .addComponent(jButton3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(155, 155, 155)
+                        .addComponent(jButton4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(140, 140, 140)
+                        .addComponent(jLabel1)))
                 .addContainerGap(71, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(160, 160, 160))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -86,9 +102,11 @@ public class MenuAdmin extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addGap(56, 56, 56)
+                .addGap(43, 43, 43)
                 .addComponent(jButton3)
-                .addContainerGap(109, Short.MAX_VALUE))
+                .addGap(40, 40, 40)
+                .addComponent(jButton4)
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         pack();
@@ -97,11 +115,29 @@ public class MenuAdmin extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
                QuanLyThietBi secondForm = new QuanLyThietBi();
                         secondForm.setVisible(true);
+                        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
-
+     //Xử lý sự kiện khi nhấn nút xem tình trạng
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        XemTinhTrangAdmin secondForm = new XemTinhTrangAdmin ();
+                secondForm.setVisible(true);
+                dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+    //Xử lý khi nhấn nút đánh giá thiết bị
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        DanhGiaAdmin secondForm = new DanhGiaAdmin();
+                secondForm.setVisible(true);
+               dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
+    // Xử lý khi nhấn nút thoát
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        DangNhap secondForm = new DangNhap();
+                secondForm.setVisible(true);
+                dispose();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -142,6 +178,7 @@ public class MenuAdmin extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables

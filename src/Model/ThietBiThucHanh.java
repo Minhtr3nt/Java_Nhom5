@@ -34,7 +34,7 @@ public class ThietBiThucHanh extends ThietBi{
     public ThietBiThucHanh() {
     }
     
-
+    
     public int getTinhTrangHoatDong() {
         return TinhTrangHoatDong;
     }
@@ -101,13 +101,16 @@ public class ThietBiThucHanh extends ThietBi{
     public int TongDiem(){
         return this.DiemBaoTri+this.DiemHieuSuat+this.DiemHuHong+this.DiemTieuHao+this.DiemTuoiTho+this.TinhTrangHoatDong;
     }
-    public void DanhGia(){
+    @Override
+    public String getDanhGia(){
         if(TongDiem()>=6 && TongDiem()<=12){
-            System.out.println("Thiet bi can bao tri ngay lap tuc");
+            return "Thiết bị cần bảo trì ngay lập tức";
         }else if(TongDiem()>=13&&TongDiem()<=18){
-            System.out.println("Thiet bi can bao tri dinh ky");
+            return "Thiêt bị cần bảo trì định kỳ";
+        }else if(TongDiem()==0){
+            return "Chưa đánh giá" ;
         }else{
-            System.out.println("Thiet bi chua can bao tri");
+            return "Thiết bị chưa cần bảo trì";
         }
     
     }
